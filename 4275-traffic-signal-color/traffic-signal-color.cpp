@@ -7,7 +7,7 @@ public:
         else if(timer == 30){
             return "Orange";
         }
-        else if(timer > 30 && timer <= 90){
+        else if(timer <= 90 && timer > 30){
             return "Red";
         }
         return "Invalid";
