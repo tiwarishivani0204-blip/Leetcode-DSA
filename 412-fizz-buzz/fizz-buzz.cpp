@@ -13,7 +13,7 @@ public:
                 answer.push_back("Buzz");
             }
             else 
-                answer.push_back(to_string(i));
+                answer.push_back(to_string(i)); //to_string will convert integer to the string like 7 to "7" so that it can be pushed onto the answer string..
         }
         return answer;
     }
