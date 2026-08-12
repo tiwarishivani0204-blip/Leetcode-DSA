@@ -1,12 +1,12 @@
 class Solution {
 public:
     string kthDistinct(vector<string>& arr, int k) {
-        unordered_map<string, int> freq;
+        unordered_map<string, int> frequency;
         for (string s : arr) {
-            freq[s]++;
+            frequency[s]++;
         }
         for (string s : arr) {
-           if (freq[s] == 1) {
+           if (frequency[s] == 1) {
             k--;
              if (k == 0) {
                 return s;
